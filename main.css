@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(102, 102, 102);
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 7%;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    white-space: nowrap;
+}
+
+.submit{
+    font-size: 1.2rem;
+    padding: 0.6rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    background-color: gold;
+}
+
+.submit:hover{
+    background-color: blue;
+    border: none;
+    outline: none;
+}
+
+.submit a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav a{
+    display: inline-block;
+    margin-inline: 45px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.nav a:hover{
+    border-bottom: 2px solid black;
+}
+
+.section{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+
+section{
+    padding: 0 19%;
+    color: white;
+}
+
+.fine{
+    background-color: transparent;
+}
+
+.fine h2{
+    font-size: 1.5rem;
+    margin-bottom: 1.1rem;
+}
+
+.fine h1{
+    font-size: 3rem;
+    margin-bottom: 1.1rem;
+    font-family: cursive;
+}
+
+.fine p{
+    font-size: 1.34rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.button{
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    background-color: gold;
+    margin-top: 2rem;
+}
+
+.button:hover{
+    background-color: blue;
+}
+
+@media screen and (max-width: 590px;) {
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+
+    section{
+        padding: 0 12%;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    .fine h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+}
